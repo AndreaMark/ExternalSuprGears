@@ -1,5 +1,6 @@
 # SpurExternalGears
 SI CONSIGLIA DI VISIONARE LA CARTELLA V8 
+
 Questa cartella contiene tutto il necessario a dimensionare e verificare delle ruote dentate cilindriche a denti dritti, esterni. 
 
 All'interno della cartella "moduli" sono contenuti tutte le funzioni necessarie al calcolo dei fattori geometrici e di resistenza. 
@@ -26,12 +27,20 @@ Ogni file viene salvato nella sua relativa cartella, che per semplicità esecuti
 
 Nella cartella "ipotesi preliminari" ci sono tre tabelle excel che si consglia di compilare prima di runnare qualsiasi script. 
 
-Sarà necessario inserire in input soltanto alcuni valori all'interno del file 1, come 
+Sarà necessario inserire in input - non appena richiesto dallo script - soltanto alcuni valori all'interno del file 1, come: 
+- Il numero di giri in ingresso in [rpm]
+- Il rapporto di riduzione velocità scelto
+- Il numero di denti del pignone
+- Il valore del modulo unificato scelto
+- ATTENZIONE: prima di runnare lo script è necessario modificare i valori alle righe 192, 193 altrimenti si ottengono de valori di Lewis non corretti per i numero di denti scelto.
 
-In questo modo è necessario modificare all'interno dello script solo i valori riguardanti la scelta del materiale all'interno del file "1", inserire alcuni fattori di input, e poi compilare i successivi script senza dover reinserire i dati per ogni script. 
-
-(Il file "4" produce solo un log e delle immagini)
-
+Il file "4" produce solo un log e delle immagini, nè tabelle nè database
 
 Andrea Marchegiani 
 18/10/2023
+
+Il file "forma_dente_jup" è un file jupiter dal quale poter estrapolare due grafici principali, quelli della forma del dente costruito dalla fondamentale non corretto e corretto.
+Non è necessario dover inserire valori poiché li attinge automaticamente dai database, se la dentatura non è corretta produrrà ovviemente due file uguali.
+
+Andrea Marchegiani
+17/12/2023
