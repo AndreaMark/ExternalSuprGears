@@ -1,11 +1,12 @@
 # SpurExternalGears
+SI CONSIGLIA DI VISIONARE LA CARTELLA V8 
 Questa cartella contiene tutto il necessario a dimensionare e verificare delle ruote dentate cilindriche a denti dritti, esterni. 
 
 All'interno della cartella "moduli" sono contenuti tutte le funzioni necessarie al calcolo dei fattori geometrici e di resistenza. 
   - ruote_fattorigeometrici
     Contiene tutte le funzioni necessarie al primo dimensionamento della ruota dentata: numero di denti, grandezze caratteristiche, strisciamenti...
   - ruote_correzione
-    Contiene una funzione iterativa necessario al calcolo dei coefficienti di correzione e delle caratteristiche corrette della ruota dentata.
+    Contiene una funzione iterativa necessaria al calcolo dei coefficienti di correzione e delle caratteristiche corrette della ruota dentata.
   - ruote_fattoriinfluenza
     Contiene tutte quelle funzioni necessarie al calolo dei fattori di influenza secondo norma ISO 6336-1
   - ruote_fattoriflessione
@@ -20,8 +21,12 @@ All'interno della cartella "moduli" sono contenuti tutte le funzioni necessarie 
 L'ordine in cui runnare gli script è chiaramente il seguente: 
 1 - 2 - 3.1 - 3.2 - 4
 
-Ogni script creerà un database dal quale lo script precedente attingerà valori, una tabella al fine di visualizzare i valori, un file "log" dove registererà i print e delle immagini. 
-Ogni file viene salvato nella sua relativa cartella tranne i database, che per semplicità esecutiva vengono salvati all'interno della stessa cartella dello script. 
+Ogni script creerà un database dal quale lo script successivo attingerà valori, una tabella al fine di visualizzare i valori, un file "log" dove registererà i print e delle immagini. 
+Ogni file viene salvato nella sua relativa cartella, che per semplicità esecutiva vengono salvati all'interno della stessa cartella dello script. 
+
+Nella cartella "ipotesi preliminari" ci sono tre tabelle excel che si consglia di compilare prima di runnare qualsiasi script. 
+
+Sarà necessario inserire in input soltanto alcuni valori all'interno del file 1, come 
 
 In questo modo è necessario modificare all'interno dello script solo i valori riguardanti la scelta del materiale all'interno del file "1", inserire alcuni fattori di input, e poi compilare i successivi script senza dover reinserire i dati per ogni script. 
 
