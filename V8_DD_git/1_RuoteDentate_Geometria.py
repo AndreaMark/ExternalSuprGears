@@ -51,7 +51,7 @@ omega_in = x*13000                  # rpm
 omega_in_s = 2*np.pi*omega_in/60    # rad/s
 tau_calc = x*0.5 + 0.2
 
-omega_input = omega_in #input("Se il riduttore è multistadio, inserisci la velocità di rotazione corrispondente in [rpm]: ")
+omega_input = input("Se il riduttore è multistadio, inserisci la velocità di rotazione corrispondente in [rpm]: ")
 omega_in = float(omega_input)
 omega_in_s = 2*np.pi*omega_in/60
 
@@ -69,7 +69,7 @@ out_file.write(stu3 + '\n'), print(stu3)
 st00 = f"Il rapporto di trasmissione richiesto è: {tau_calc}"
 out_file.write(st00 + '\n'), print(st00)
 
-tau_input = tau_calc #input('Se il riduttore è multistadio, inserisci il valore del rapporto di trasmissione che scegli: ')
+tau_input = input('Se il riduttore è multistadio, inserisci il valore del rapporto di riduzione che scegli: ')
 tau = float(tau_input)
 
 
@@ -150,7 +150,7 @@ out_file.write(st5 + '\n'), print(st5)
 
 
 ####   Reale numero di denti 
-DentiP_input = 23 #input('Inserisci il numero dei denti del pignone: ') 
+DentiP_input = input('Inserisci il numero dei denti del pignone: ') 
 DentiP = int(DentiP_input)
 DentiR_guess = DentiP + 15
 toll = 1e-5
@@ -204,7 +204,7 @@ out_file.write(st11 + '\n'), print(st11)
 
 
 ####   Gandezze caratteristiche
-modulo = 2.5 #input('Inserisci il valore del modulo scelto: ')
+modulo = input('Inserisci il valore del modulo scelto: ')
 m = float(modulo)
 a = m
 u = 1.25*m
